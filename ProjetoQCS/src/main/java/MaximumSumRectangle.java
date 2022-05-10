@@ -7,7 +7,7 @@ import java.io.*;
 public class MaximumSumRectangle {
     // Function to find maximum sum rectangular
     // submatrix
-    private static int maxSumRectangle(int[][] mat)
+    public static int maxSumRectangle(int[][] mat)
     {
         int m = mat.length;
         int n = mat[0].length;
@@ -75,7 +75,7 @@ public class MaximumSumRectangle {
         return maxSum == -1 ? minSum : maxSum;
     }
 
-    // Driver Code
+    /*// Driver Code
     public static void main(String[] args)
     {
         int arr[][] = new int[][] { { 1, 2, -1, -4, -20 },
@@ -85,7 +85,7 @@ public class MaximumSumRectangle {
 
         // Function call
         System.out.println(maxSumRectangle(arr));
-    }
+    }*/
 }
 
 // This code is contributed by Nayanava De
