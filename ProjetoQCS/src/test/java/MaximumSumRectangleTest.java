@@ -29,16 +29,14 @@ class MaximumSumRectangleTest {
 
     @Test
     void path9Test(){
-        int arr[][] = new int[1][1];
-        arr[0][0] = Integer.MIN_VALUE;
+        int[][] arr = new int[][] {{Integer.MIN_VALUE}};
         //System.out.println(Arrays.deepToString(arr));
         assertEquals(Integer.MIN_VALUE, MaximumSumRectangle.maxSumRectangle(arr));
     }
 
     @Test
     void path10Test() {
-        int[][] arr = new int[1][1];
-        arr[0][0] = -1;
+        int[][] arr = new int[][] {{-1}};
         //System.out.println(Arrays.deepToString(arr));
         assertEquals(-1, MaximumSumRectangle.maxSumRectangle(arr));
     }
