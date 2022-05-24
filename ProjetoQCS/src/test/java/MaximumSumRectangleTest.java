@@ -42,4 +42,34 @@ class MaximumSumRectangleTest {
         //System.out.println(Arrays.deepToString(arr));
         assertEquals(-1, MaximumSumRectangle.maxSumRectangle(arr));
     }
+
+    //Black Box testing
+    @Test
+    void BB1Test() {
+        int arr[][] = new int[][] {
+                {  1,  2, -1, -4, -20 },
+                { -8, -3,  4,  2,  1 },
+                {  3,  8, 10,  1,  3 },
+                { -4, -1,  1,  7, -6 } };
+        //System.out.println(Arrays.deepToString(arr));
+        assertEquals(29, MaximumSumRectangle.maxSumRectangle(arr));
+    }
+
+    @Test
+    void BB2Test() {
+        int arr[][] = new int[][] {
+                {  1,  2,  7, -6 } };
+        //System.out.println(Arrays.deepToString(arr));
+        assertEquals(10, MaximumSumRectangle.maxSumRectangle(arr));
+    }
+
+    @Test
+    void BB3Test() {
+        int arr[][] = new int[][] {
+                {  1,  2 },
+                { -4, -1,  1, 12 } };
+        //System.out.println(Arrays.deepToString(arr));
+        assertEquals(3, MaximumSumRectangle.maxSumRectangle(arr));
+    }
+
 }
